@@ -10,7 +10,6 @@
 		184EEE15261CAE11007B0D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE14261CAE11007B0D57 /* AppDelegate.swift */; };
 		184EEE17261CAE11007B0D57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE16261CAE11007B0D57 /* SceneDelegate.swift */; };
 		184EEE19261CAE11007B0D57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE18261CAE11007B0D57 /* ViewController.swift */; };
-		184EEE1C261CAE11007B0D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EEE1A261CAE11007B0D57 /* Main.storyboard */; };
 		184EEE1E261CAE12007B0D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184EEE1D261CAE12007B0D57 /* Assets.xcassets */; };
 		184EEE21261CAE12007B0D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EEE1F261CAE12007B0D57 /* LaunchScreen.storyboard */; };
 		184EEE2B261CB6D9007B0D57 /* SongDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE2A261CB6D9007B0D57 /* SongDetails.swift */; };
@@ -22,12 +21,13 @@
 		184EEE14261CAE11007B0D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184EEE16261CAE11007B0D57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		184EEE18261CAE11007B0D57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		184EEE1B261CAE11007B0D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		184EEE1D261CAE12007B0D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184EEE20261CAE12007B0D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184EEE22261CAE12007B0D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184EEE2A261CB6D9007B0D57 /* SongDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetails.swift; sourceTree = "<group>"; };
 		184EEE2D261CB749007B0D57 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		184EEE49261CCE89007B0D57 /* iTunesSearchDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchDemoTests.swift; sourceTree = "<group>"; };
+		184EEE4B261CCE89007B0D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				184EEE13261CAE11007B0D57 /* iTunesSearchDemo */,
+				184EEE48261CCE89007B0D57 /* iTunesSearchDemoTests */,
 				184EEE12261CAE11007B0D57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,16 +62,24 @@
 			isa = PBXGroup;
 			children = (
 				184EEE14261CAE11007B0D57 /* AppDelegate.swift */,
+				184EEE16261CAE11007B0D57 /* SceneDelegate.swift */,
 				184EEE2A261CB6D9007B0D57 /* SongDetails.swift */,
 				184EEE2D261CB749007B0D57 /* APIService.swift */,
-				184EEE16261CAE11007B0D57 /* SceneDelegate.swift */,
 				184EEE18261CAE11007B0D57 /* ViewController.swift */,
-				184EEE1A261CAE11007B0D57 /* Main.storyboard */,
 				184EEE1D261CAE12007B0D57 /* Assets.xcassets */,
 				184EEE1F261CAE12007B0D57 /* LaunchScreen.storyboard */,
 				184EEE22261CAE12007B0D57 /* Info.plist */,
 			);
 			path = iTunesSearchDemo;
+			sourceTree = "<group>";
+		};
+		184EEE48261CCE89007B0D57 /* iTunesSearchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				184EEE49261CCE89007B0D57 /* iTunesSearchDemoTests.swift */,
+				184EEE4B261CCE89007B0D57 /* Info.plist */,
+			);
+			path = iTunesSearchDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +141,6 @@
 			files = (
 				184EEE21261CAE12007B0D57 /* LaunchScreen.storyboard in Resources */,
 				184EEE1E261CAE12007B0D57 /* Assets.xcassets in Resources */,
-				184EEE1C261CAE11007B0D57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,14 +162,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		184EEE1A261CAE11007B0D57 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				184EEE1B261CAE11007B0D57 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		184EEE1F261CAE12007B0D57 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -224,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Combine
 class APIServices: NSObject {
     static let shared = APIServices()
+    private let baseURL = "https://itunes.apple.com/search?term="
+    var songInfo: SongInfo?
     func fetchSongs(term: String, completionHandler: @escaping (SongInfo) -> Void){
-        guard let safeURL = URL(string: "https://itunes.apple.com/search?term=\(term)") else {return}
+        guard let safeURL = URL(string: "\(baseURL)\(term)") else {return}
         URLSession.shared.dataTask(with: safeURL) { (data, res, err) in
             if let error = err{
                 print(error.localizedDescription)
