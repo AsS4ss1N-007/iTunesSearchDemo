@@ -13,6 +13,8 @@
 		184EEE1C261CAE11007B0D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EEE1A261CAE11007B0D57 /* Main.storyboard */; };
 		184EEE1E261CAE12007B0D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184EEE1D261CAE12007B0D57 /* Assets.xcassets */; };
 		184EEE21261CAE12007B0D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EEE1F261CAE12007B0D57 /* LaunchScreen.storyboard */; };
+		184EEE2B261CB6D9007B0D57 /* SongDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE2A261CB6D9007B0D57 /* SongDetails.swift */; };
+		184EEE2E261CB749007B0D57 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184EEE2D261CB749007B0D57 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		184EEE1D261CAE12007B0D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184EEE20261CAE12007B0D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184EEE22261CAE12007B0D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184EEE2A261CB6D9007B0D57 /* SongDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetails.swift; sourceTree = "<group>"; };
+		184EEE2D261CB749007B0D57 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				184EEE14261CAE11007B0D57 /* AppDelegate.swift */,
+				184EEE2A261CB6D9007B0D57 /* SongDetails.swift */,
+				184EEE2D261CB749007B0D57 /* APIService.swift */,
 				184EEE16261CAE11007B0D57 /* SceneDelegate.swift */,
 				184EEE18261CAE11007B0D57 /* ViewController.swift */,
 				184EEE1A261CAE11007B0D57 /* Main.storyboard */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				184EEE19261CAE11007B0D57 /* ViewController.swift in Sources */,
+				184EEE2E261CB749007B0D57 /* APIService.swift in Sources */,
+				184EEE2B261CB6D9007B0D57 /* SongDetails.swift in Sources */,
 				184EEE15261CAE11007B0D57 /* AppDelegate.swift in Sources */,
 				184EEE17261CAE11007B0D57 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24RH386RN6;
 				INFOPLIST_FILE = iTunesSearchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24RH386RN6;
 				INFOPLIST_FILE = iTunesSearchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
